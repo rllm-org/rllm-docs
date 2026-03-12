@@ -1,97 +1,39 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "Experimental features"
+description: "Overview of rLLM's experimental features including the unified workflow trainer, advantage estimators, and monitoring UI."
 ---
 
-## Setting up
+This section covers the experimental features built around the `UnifiedTrainer` and its ecosystem.
 
-Get your documentation site up and running in minutes.
+## Unified workflow trainer
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
-
-## Make it yours
-
-Design a docs site that looks great and empowers your users.
-
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
+<CardGroup cols={3}>
+  <Card title="Unified trainer" icon="gears" href="/experimental/unified-trainer">
+    End-to-end training loop architecture and lifecycle
   </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
+  <Card title="Backend protocol" icon="plug" href="/experimental/backend-protocol">
+    Backend interface contract used by the unified trainer
   </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
+  <Card title="Configuration" icon="sliders" href="/experimental/configuration">
+    Config structure and forwarding behavior
   </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
+</CardGroup>
 
-## Create beautiful pages
+## Algorithms
 
-Everything you need to create world-class documentation.
+<CardGroup cols={2}>
+  <Card title="Advantage estimator" icon="calculator" href="/experimental/advantage-estimator">
+    rLLM-native advantage estimation and customization
+  </Card>
+  <Card title="Pre-computing advantage" icon="bolt" href="/experimental/precompute-advantage">
+    Step-level precomputed training signals and mixed-mode training
+  </Card>
+</CardGroup>
 
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
+## Monitoring
 
-## Need inspiration?
-
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+<CardGroup cols={1}>
+  <Card title="rLLM UI" icon="chart-line" href="/experimental/ui">
+    Real-time monitoring for agent training and evaluation
+  </Card>
+</CardGroup>
