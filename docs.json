@@ -1,62 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "aspen",
   "name": "rLLM",
+  "theme": "aspen",
   "colors": {
-    "primary": "#3B82F6",
-    "light": "#60A5FA",
-    "dark": "#2563EB"
+    "primary": "#6366f1",
+    "light": "#818cf8",
+    "dark": "#4f46e5"
   },
   "favicon": "/favicon.svg",
-  "banner": {
-    "content": "This site only covers **experimental features**. For the full rLLM documentation, visit [rllm-project.readthedocs.io](https://rllm-project.readthedocs.io/en/latest/).",
-    "dismissible": true
-  },
-  "navigation": {
-    "groups": [
-      {
-        "group": "Getting started",
-        "pages": ["index"]
-      },
-      {
-        "group": "Tutorials",
-        "pages": ["tutorials/solver-judge-workflow"]
-      },
-      {
-        "group": "Unified workflow trainer",
-        "pages": [
-          "experimental/unified-trainer",
-          "experimental/backend-protocol",
-          "experimental/configuration"
-        ]
-      },
-      {
-        "group": "Algorithms",
-        "pages": [
-          "experimental/advantage-estimator",
-          "experimental/precompute-advantage"
-        ]
-      },
-      {
-        "group": "Monitoring",
-        "pages": ["experimental/ui"]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "GitHub",
-          "href": "https://github.com/rllm-org/rllm",
-          "icon": "github"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://rllm-project.com/blog.html",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
   "logo": {
     "light": "/logo/light.png",
     "dark": "/logo/dark.png"
@@ -70,13 +21,175 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Full Docs",
-      "href": "https://rllm-project.readthedocs.io/en/latest/"
+      "label": "Slack",
+      "href": "https://join.slack.com/t/rllmproject/shared_invite/zt-3pyblo6ef-m9kqAoInI8xSyUBkpuOyXA"
     }
   },
   "footer": {
     "socials": {
-      "github": "https://github.com/rllm-org/rllm"
+      "github": "https://github.com/rllm-org/rllm",
+      "x": "https://x.com/rllm_project",
+      "website": "https://rllm-project.com",
+      "slack": "https://join.slack.com/t/rllmproject/shared_invite/zt-3pyblo6ef-m9kqAoInI8xSyUBkpuOyXA"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart-cli"
+            ]
+          },
+          {
+            "group": "Tutorials",
+            "pages": [
+              "tutorials/solver-judge-workflow"
+            ]
+          },
+          {
+            "group": "rLLM CLI & UI",
+            "pages": [
+              "core-concepts/cli-and-ui",
+              "experimental/ui",
+              "datasets"
+            ]
+          },
+          {
+            "group": "Core concepts",
+            "pages": [
+              "core-concepts/episodes-trajectories-steps",
+              "core-concepts/agentflow-evaluator",
+              "core-concepts/training"
+            ]
+          },
+          {
+            "group": "Training backends",
+            "pages": [
+              "backends/verl",
+              "backends/tinker",
+              "backends/comparison"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/customizing-training",
+              "guides/distributed-training"
+            ]
+          },
+          {
+            "group": "Unified workflow trainer",
+            "pages": [
+              "experimental/unified-trainer",
+              "experimental/backend-protocol",
+              "experimental/configuration"
+            ]
+          },
+          {
+            "group": "Advanced algorithms",
+            "pages": [
+              "experimental/advantage-estimator",
+              "experimental/precompute-advantage"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Examples",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "examples/math-agent",
+              "examples/frozen-lake"
+            ]
+          },
+          {
+            "group": "Advanced examples",
+            "pages": [
+              "examples/deep-scaler",
+              "examples/deep-coder",
+              "examples/deep-swe",
+              "examples/search-agent",
+              "examples/vlm-geo3k"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Projects",
+        "groups": [
+          {
+            "group": "Case studies",
+            "pages": [
+              "projects/finqa",
+              "projects/deep-scaler",
+              "projects/deep-coder",
+              "projects/deep-swe",
+              "projects/tongyi-deep-research",
+              "projects/terminal-bench-rl",
+              "projects/petting-llms",
+              "projects/seta",
+              "projects/llm-in-sandbox",
+              "projects/cogito-ergo-ludo",
+              "projects/cut-the-bill",
+              "projects/experiential-rl",
+              "projects/v1-parallel-reasoners"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core API",
+            "pages": [
+              "api/agents",
+              "api/environments",
+              "api/workflows"
+            ]
+          },
+          {
+            "group": "Engines",
+            "pages": [
+              "api/execution-engine",
+              "api/workflow-engine",
+              "api/rollout-engine"
+            ]
+          },
+          {
+            "group": "Training",
+            "pages": [
+              "api/trainer",
+              "api/rewards"
+            ]
+          },
+          {
+            "group": "Tools & utilities",
+            "pages": [
+              "api/tools",
+              "api/parsers",
+              "api/data"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Blog",
+          "href": "https://rllm-project.com/blog.html",
+          "icon": "newspaper"
+        }
+      ]
     }
   }
 }
