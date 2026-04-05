@@ -45,7 +45,7 @@ git clone https://github.com/rllm-org/rllm.git
 cd rllm
 uv venv --python 3.10
 source .venv/bin/activate
-uv pip install -e .[verl]
+uv pip install -e .[verl] --torch-backend=cu128  # or cu129, cu130
 ```
 
 ```bash Docker
@@ -58,6 +58,16 @@ docker start rllm-container
 docker exec -it rllm-container bash
 ```
 </CodeGroup>
+
+<Note>
+**Megatron support** — verl also supports Megatron for efficient large-scale training. Adding it requires a from-source install since the script lives in the rLLM repo:
+
+```bash
+bash scripts/install_megatron.sh <cu128|cu129|cu130>
+```
+
+This installs nvidia-modelopt, transformer-engine, megatron-core, megatron-bridge, and NVIDIA Apex. The CUDA version you pass here must match the `--torch-backend` flag in your rLLM install: e.g. `cu128` for CUDA 12.8. Compilation may take a while.
+</Note>
 
 ## Dependencies
 
